@@ -1,6 +1,6 @@
 package config;
 
-import Utils.JsonUtils;
+import utils.JsonUtils;
 import com.fasterxml.jackson.databind.JsonNode;
 import models.EnvironmentConfig;
 import org.slf4j.Logger;
