@@ -28,9 +28,10 @@ public class PostCodeSimulation extends Simulation {
     //Define simulation type to be used for the test
     String simulationType = SimulationConfigDetails.getEnvVarOrDefault("SIMULATION_TYPE", "loadtest");
 
+    // Define the simulation
     SimulationValues simulationValues = SimulationConfigDetails.getSimulationValues(simulationName, "PostCodeConfig", simulationType);
 
-    //
+    // Define the scenario
     ScenarioBuilder PostcodeScenario = PostCodeScenario.PostCodeScn_GetPostCodes(simulationValues);
 
     {
